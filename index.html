@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSS Tracker - LLM/AI/ML注目リポジトリ</title>
+    <meta name="description" content="GitHub上の人気LLM/AI/ML/NLPプロジェクトを追跡。最新のトレンドと注目リポジトリをチェック！">
+    
+    <!-- Google AdSense (AdSenseコードを設定してください) -->
+    <!-- 
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX"
+         crossorigin="anonymous"></script>
+    -->
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: #f6f8fa;
+            color: #24292f;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        /* タブスタイル */
+        .tabs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-bottom: 30px;
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #d0d7de;
+        }
+        
+        .tab-btn {
+            padding: 10px 20px;
+            background: #f6f8fa;
+            border: 1px solid #d0d7de;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.95em;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+        
+        .tab-btn:hover {
+            background: #eaeef2;
+        }
+        
+        .tab-btn.active {
+            background: #0969da;
+            color: white;
+            border-color: #0969da;
+        }
+        
+        /* ソートボタン */
+        .sort-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .sort-btn {
+            padding: 10px 20px;
+            background: white;
+            border: 1px solid #d0d7de;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.95em;
+            transition: all 0.2s;
+        }
+        
+        .sort-btn:hover {
+            background: #f6f8fa;
+        }
+        
+        .sort-btn.active {
+            background: #0969da;
+            color: white;
+            border-color: #0969da;
+        }
+        
+        .repo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+        }
+        
+        .repo-card {
+            background: white;
+            border: 1px solid #d0d7de;
+            border-radius: 8px;
+            padding: 20px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .repo-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .repo-title {
+            font-size: 1.2em;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #0969da;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .repo-title:hover {
+            text-decoration: underline;
+        }
+        
+        .repo-description {
+            color: #57606a;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+        
+        .repo-stats {
+            display: flex;
+            gap: 15px;
+            font-size: 0.9em;
+            color: #57606a;
+        }
+        
+        .stat {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 40px;
+            font-size: 1.2em;
+            color: #57606a;
+        }
+        
+        .error {
+            text-align: center;
+            padding: 40px;
+            font-size: 1.2em;
+            color: #cf222e;
+        }
+        
+        .ad-container {
+            background: #f6f8fa;
+            border: 1px dashed #d0d7de;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+            min-height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .metadata {
+            text-align: center;
+            font-size: 0.85em;
+            color: #57606a;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: white;
+            border-radius: 6px;
+            border: 1px solid #d0d7de;
+        }
+        
+        .affiliate-link {
+            display: inline-block;
+            margin-top: 8px;
+            padding: 4px 10px;
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 4px;
+            color: #856404;
+            text-decoration: none;
+            font-size: 0.85em;
+            transition: all 0.2s;
+        }
+        
+        .affiliate-link:hover {
+            background: #ffc107;
+            color: white;
+        }
+        
+        .repo-topics {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-top: 10px;
+        }
+        
+        .topic-tag {
+            background: #ddf4ff;
+            color: #0969da;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.75em;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .category-count {
+            font-size: 0.8em;
+            color: #57606a;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 OSS Tracker</h1>
+            <p>LLM/AI/ML/NLP 注目リポジトリを毎日自動更新</p>
+        </header>
+        
+        <!-- 広告スペース (ヘッダー下) -->
+        <div class="ad-container">
+            <!-- AdSense広告コードをここに配置 -->
+            <p style="color: #999;">広告スペース</p>
+        </div>
+        
+        <div id="metadata" class="metadata"></div>
+        
+        <!-- カテゴリータブ -->
+        <div id="tabs" class="tabs">
+            <div class="loading">読み込み中...</div>
+        </div>
+        
+        <!-- ソートボタン -->
+        <div class="sort-buttons">
+            <button class="sort-btn active" data-sort="stars">🔥 人気順</button>
+            <button class="sort-btn" data-sort="updated">📈 トレンド（最近更新）</button>
+            <button class="sort-btn" data-sort="created">✨ 新着順</button>
+        </div>
+        
+        <!-- タブコンテンツ -->
+        <div id="tab-contents">
+            <div class="loading">読み込み中...</div>
+        </div>
+        
+        <!-- 広告スペース (コンテンツ下) -->
+        <div class="ad-container" style="margin-top: 40px;">
+            <!-- AdSense広告コードをここに配置 -->
+            <p style="color: #999;">広告スペース</p>
+        </div>
+    </div>
+    
+    <script>
+        let categoriesData = {};
+        let currentCategory = 'all';
+        let currentSort = 'stars';
+        
+        // descriptionを指定文字数で省略する関数
+        function truncateDescription(text, maxLength = 200) {
+            if (!text) return '説明なし';
+            if (text.length <= maxLength) return text;
+            return text.substring(0, maxLength) + '...';
+        }
+        
+        // リポジトリカードを生成
+        function createRepoCard(repo) {
+            const topicsHtml = repo.topics && repo.topics.length > 0 
+                ? `<div class="repo-topics">
+                    ${repo.topics.slice(0, 5).map(topic => 
+                        `<span class="topic-tag">${topic}</span>`
+                    ).join('')}
+                   </div>`
+                : '';
+            
+            const affiliateHtml = repo.affiliate_link 
+                ? `<a href="${repo.affiliate_link}" target="_blank" class="affiliate-link">🔗 公式サイト</a>`
+                : '';
+            
+            return `
+                <div class="repo-card">
+                    <a href="${repo.html_url}" target="_blank" class="repo-title">${repo.name}</a>
+                    <div class="repo-description">${truncateDescription(repo.description)}</div>
+                    <div class="repo-stats">
+                        <div class="stat">⭐ ${repo.stargazers_count.toLocaleString()}</div>
+                        <div class="stat">🔱 ${repo.forks_count.toLocaleString()}</div>
+                        ${repo.language ? `<div class="stat">💻 ${repo.language}</div>` : ''}
+                    </div>
+                    ${topicsHtml}
+                    ${affiliateHtml}
+                </div>
+            `;
+        }
+        
+        // メタデータを表示
+        function displayMetadata(metadata) {
+            const metadataEl = document.getElementById('metadata');
+            if (metadata && metadata.updated_at) {
+                const updateDate = new Date(metadata.updated_at);
+                const formatted = updateDate.toLocaleString('ja-JP', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric',
+                    hour: '2-digit',
+                    minute: '2-digit'
+                });
+                
+                const totalCount = Object.values(categoriesData).flat().length;
+                
+                metadataEl.innerHTML = `
+                    📅 最終更新: ${formatted} | 
+                    📊 データソース: <a href="${metadata.api_url}" target="_blank">GitHub API</a> |
+                    ${totalCount}件のリポジトリ
+                `;
+            }
+        }
+        
+        // タブを生成
+        function renderTabs() {
+            const tabsContainer = document.getElementById('tabs');
+            const categories = Object.keys(categoriesData);
+            
+            // 全カテゴリーの総リポジトリ数
+            const allCount = Object.values(categoriesData).flat().length;
+            
+            let html = `
+                <button class="tab-btn active" data-category="all">
+                    📚 全カテゴリー <span class="category-count">(${allCount})</span>
+                </button>
+            `;
+            
+            categories.forEach(category => {
+                const count = categoriesData[category].length;
+                html += `
+                    <button class="tab-btn" data-category="${category}">
+                        ${category} <span class="category-count">(${count})</span>
+                    </button>
+                `;
+            });
+            
+            tabsContainer.innerHTML = html;
+            
+            // タブクリックイベント
+            tabsContainer.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    currentCategory = e.currentTarget.dataset.category;
+                    
+                    // タブのアクティブ状態を更新
+                    tabsContainer.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                    e.currentTarget.classList.add('active');
+                    
+                    // コンテンツを更新
+                    renderContent();
+                    
+                    // ページトップにスクロール
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            });
+        }
+        
+        // コンテンツを表示
+        function renderContent() {
+            const container = document.getElementById('tab-contents');
+            
+            let repos = [];
+            if (currentCategory === 'all') {
+                // 全カテゴリーのリポジトリをマージ
+                repos = Object.values(categoriesData).flat();
+            } else {
+                repos = categoriesData[currentCategory] || [];
+            }
+            
+            // ソート
+            repos = sortRepos(repos, currentSort);
+            
+            // 表示
+            container.innerHTML = `
+                <div class="repo-grid">
+                    ${repos.map(repo => createRepoCard(repo)).join('')}
+                </div>
+            `;
+        }
+        
+        // リポジトリをソート
+        function sortRepos(repos, sortType) {
+            return [...repos].sort((a, b) => {
+                if (sortType === 'stars') {
+                    return b.stargazers_count - a.stargazers_count;
+                } else if (sortType === 'updated') {
+                    return new Date(b.updated_at) - new Date(a.updated_at);
+                } else if (sortType === 'created') {
+                    return new Date(b.created_at) - new Date(a.created_at);
+                }
+                return 0;
+            });
+        }
+        
+        // ソートボタンイベント
+        document.querySelectorAll('.sort-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                currentSort = e.currentTarget.dataset.sort;
+                
+                // ボタンのアクティブ状態を更新
+                document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
+                e.currentTarget.classList.add('active');
+                
+                // コンテンツを再描画
+                renderContent();
+            });
+        });
+        
+        // データを読み込む
+        async function loadData() {
+            try {
+                const response = await fetch('assets/categories.json');
+                if (!response.ok) throw new Error('データの読み込みに失敗しました');
+                
+                const jsonData = await response.json();
+                
+                // メタデータを保存
+                if (jsonData.metadata) {
+                    displayMetadata(jsonData.metadata);
+                }
+                
+                // リポジトリデータを取得
+                categoriesData = jsonData.repositories || jsonData;
+                
+                // タブを生成
+                renderTabs();
+                
+                // 初期コンテンツを表示
+                renderContent();
+                
+            } catch (error) {
+                document.getElementById('tabs').innerHTML = `<div class="error">エラー: ${error.message}</div>`;
+                document.getElementById('tab-contents').innerHTML = '';
+            }
+        }
+        
+        // 初期データ読み込み
+        loadData();
+    </script>
+</body>
+</html>
