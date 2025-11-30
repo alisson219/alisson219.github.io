@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OSS Tracker - Trending LLM/AI/ML Repositories</title>
-    <meta name="description" content="Track popular LLM/AI/ML/NLP projects on GitHub. Discover the latest trends and featured repositories updated daily!">
+    <title>OSS Tracker - LLM/AI/ML注目リポジトリ</title>
+    <meta name="description" content="GitHub上の人気LLM/AI/ML/NLPプロジェクトを追跡。最新のトレンドと注目リポジトリを毎日更新！">
     
     <!-- Google AdSense -->
     <!-- 
@@ -308,50 +308,48 @@
     <div class="container">
         <header>
             <div class="lang-switcher">
-                <a href="index-ja.html" class="lang-btn">🇯🇵 JP</a>
+                <a href="index.html" class="lang-btn">🇺🇸 English</a>
             </div>
             <h1>🤖 OSS Tracker</h1>
-            <p>Trending LLM/AI/ML/NLP Repositories - Updated Daily</p>
+            <p>LLM/AI/ML/NLP 注目リポジトリを毎日自動更新</p>
         </header>
         
-        <!-- Ad Space (Below Header) -->
+        <!-- 広告スペース (ヘッダー下) -->
         <div class="ad-container">
-            <!-- Place AdSense code here -->
-            <p style="color: #999;">Advertisement Space</p>
+            <p style="color: #999;">広告スペース</p>
         </div>
         
         <div id="metadata" class="metadata"></div>
         
-        <!-- Category Tabs -->
+        <!-- カテゴリータブ -->
         <div id="tabs" class="tabs">
-            <div class="loading">Loading...</div>
+            <div class="loading">読み込み中...</div>
         </div>
         
-        <!-- Sort Buttons -->
+        <!-- ソートボタン -->
         <div class="sort-buttons">
-            <button class="sort-btn active" data-sort="stars">🔥 Popular</button>
-            <button class="sort-btn" data-sort="updated">📈 Trending</button>
-            <button class="sort-btn" data-sort="created">✨ New</button>
+            <button class="sort-btn active" data-sort="stars">🔥 人気順</button>
+            <button class="sort-btn" data-sort="updated">📈 トレンド（最近更新）</button>
+            <button class="sort-btn" data-sort="created">✨ 新着順</button>
         </div>
         
-        <!-- Tab Contents -->
+        <!-- タブコンテンツ -->
         <div id="tab-contents">
-            <div class="loading">Loading...</div>
+            <div class="loading">読み込み中...</div>
         </div>
         
-        <!-- Pagination -->
+        <!-- ページネーション -->
         <div id="pagination" class="pagination"></div>
         
-        <!-- Ad Space (Below Content) -->
+        <!-- 広告スペース (コンテンツ下) -->
         <div class="ad-container" style="margin-top: 40px;">
-            <!-- Place AdSense code here -->
-            <p style="color: #999;">Advertisement Space</p>
+            <p style="color: #999;">広告スペース</p>
         </div>
         
-        <!-- Footer -->
+        <!-- フッター -->
         <footer style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #d0d7de; color: #57606a; font-size: 0.9em;">
             <p>
-                <a href="privacy-policy.html" style="color: #0969da; text-decoration: none;">Privacy Policy</a> | 
+                <a href="privacy-policy-ja.html" style="color: #0969da; text-decoration: none;">プライバシーポリシー</a> | 
                 <a href="https://github.com/alisson219/oss-tracker" target="_blank" style="color: #0969da; text-decoration: none;">GitHub</a>
             </p>
             <p style="margin-top: 10px;">© 2025 OSS Tracker. Data from GitHub API.</p>
@@ -366,7 +364,7 @@
         const itemsPerPage = 20;
         
         function truncateDescription(text, maxLength = 200) {
-            if (!text) return 'No description';
+            if (!text) return '説明なし';
             if (text.length <= maxLength) return text;
             return text.substring(0, maxLength) + '...';
         }
@@ -381,7 +379,7 @@
                 : '';
             
             const affiliateHtml = repo.affiliate_link 
-                ? `<a href="${repo.affiliate_link}" target="_blank" class="affiliate-link">🔗 Official Site</a>`
+                ? `<a href="${repo.affiliate_link}" target="_blank" class="affiliate-link">🔗 公式サイト</a>`
                 : '';
             
             return `
@@ -403,7 +401,7 @@
             const metadataEl = document.getElementById('metadata');
             if (metadata && metadata.updated_at) {
                 const updateDate = new Date(metadata.updated_at);
-                const formatted = updateDate.toLocaleString('en-US', {
+                const formatted = updateDate.toLocaleString('ja-JP', {
                     year: 'numeric',
                     month: 'long',
                     day: 'numeric',
@@ -414,9 +412,9 @@
                 const totalCount = Object.values(categoriesData).flat().length;
                 
                 metadataEl.innerHTML = `
-                    📅 Last Updated: ${formatted} | 
-                    📊 Data Source: <a href="${metadata.api_url}" target="_blank">GitHub API</a> |
-                    ${totalCount} repositories
+                    📅 最終更新: ${formatted} | 
+                    📊 データソース: <a href="${metadata.api_url}" target="_blank">GitHub API</a> |
+                    ${totalCount}件のリポジトリ
                 `;
             }
         }
@@ -429,7 +427,7 @@
             
             let html = `
                 <button class="tab-btn active" data-category="all">
-                    📚 All Categories <span class="category-count">(${allCount})</span>
+                    📚 全カテゴリー <span class="category-count">(${allCount})</span>
                 </button>
             `;
             
@@ -477,7 +475,7 @@
             const pageRepos = repos.slice(startIndex, endIndex);
             
             if (pageRepos.length === 0) {
-                container.innerHTML = '<div class="loading">No data available</div>';
+                container.innerHTML = '<div class="loading">データがありません</div>';
             } else {
                 container.innerHTML = `
                     <div class="repo-grid">
@@ -511,9 +509,9 @@
             
             let html = `
                 <button class="page-btn" ${currentPage === 1 ? 'disabled' : ''} onclick="goToPage(${currentPage - 1})">
-                    ← Previous
+                    ← 前へ
                 </button>
-                <span class="page-info">${startItem}-${endItem} / ${repos.length} items</span>
+                <span class="page-info">${startItem}-${endItem}件 / 全${repos.length}件</span>
             `;
             
             const maxButtons = 7;
@@ -548,7 +546,7 @@
             
             html += `
                 <button class="page-btn" ${currentPage === totalPages ? 'disabled' : ''} onclick="goToPage(${currentPage + 1})">
-                    Next →
+                    次へ →
                 </button>
             `;
             
@@ -591,7 +589,7 @@
         async function loadData() {
             try {
                 const response = await fetch('assets/categories.json');
-                if (!response.ok) throw new Error('Failed to load data');
+                if (!response.ok) throw new Error('データの読み込みに失敗しました');
                 
                 const jsonData = await response.json();
                 
@@ -606,7 +604,7 @@
                 renderPagination();
                 
             } catch (error) {
-                document.getElementById('tabs').innerHTML = `<div class="error">Error: ${error.message}</div>`;
+                document.getElementById('tabs').innerHTML = `<div class="error">エラー: ${error.message}</div>`;
                 document.getElementById('tab-contents').innerHTML = '';
             }
         }
