@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OSS Tracker - LLM/AI/ML注目リポジトリ</title>
-    <meta name="description" content="GitHub上の人気LLM/AI/ML/NLPプロジェクトを追跡。最新のトレンドと注目リポジトリをチェック！">
-    
+    <title>OSS Tracker - Focus on LLM/AI/ML</title>
+    <meta name="description" content="Tracking popular LLM/AI/ML/NLP projects on GitHub. Check out the latest trends and featured repositories!">
+
     <!-- Google AdSense (AdSenseコードを設定してください) -->
     <!-- 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX"
@@ -244,38 +244,38 @@
     <div class="container">
         <header>
             <h1>🤖 OSS Tracker</h1>
-            <p>LLM/AI/ML/NLP 注目リポジトリを毎日自動更新</p>
+            <p>Automated updates for LLM/AI/ML/NLP repositories every day</p>
         </header>
         
         <!-- 広告スペース (ヘッダー下) -->
         <div class="ad-container">
             <!-- AdSense広告コードをここに配置 -->
-            <p style="color: #999;">広告スペース</p>
+            <p style="color: #999;">ad space</p>
         </div>
         
         <div id="metadata" class="metadata"></div>
         
         <!-- カテゴリータブ -->
         <div id="tabs" class="tabs">
-            <div class="loading">読み込み中...</div>
+            <div class="loading">Loading...</div>
         </div>
         
         <!-- ソートボタン -->
         <div class="sort-buttons">
-            <button class="sort-btn active" data-sort="stars">🔥 人気順</button>
-            <button class="sort-btn" data-sort="updated">📈 トレンド（最近更新）</button>
-            <button class="sort-btn" data-sort="created">✨ 新着順</button>
+            <button class="sort-btn active" data-sort="stars">🔥 Popular</button>
+            <button class="sort-btn" data-sort="updated">📈 Trend</button>
+            <button class="sort-btn" data-sort="created">✨ New</button>
         </div>
         
         <!-- タブコンテンツ -->
         <div id="tab-contents">
-            <div class="loading">読み込み中...</div>
+            <div class="loading">Loading...</div>
         </div>
         
         <!-- 広告スペース (コンテンツ下) -->
         <div class="ad-container" style="margin-top: 40px;">
             <!-- AdSense広告コードをここに配置 -->
-            <p style="color: #999;">広告スペース</p>
+            <p style="color: #999;">ad space</p>
         </div>
     </div>
     
@@ -286,7 +286,7 @@
         
         // descriptionを指定文字数で省略する関数
         function truncateDescription(text, maxLength = 200) {
-            if (!text) return '説明なし';
+            if (!text) return 'No description';
             if (text.length <= maxLength) return text;
             return text.substring(0, maxLength) + '...';
         }
@@ -302,7 +302,7 @@
                 : '';
             
             const affiliateHtml = repo.affiliate_link 
-                ? `<a href="${repo.affiliate_link}" target="_blank" class="affiliate-link">🔗 公式サイト</a>`
+                ? `<a href="${repo.affiliate_link}" target="_blank" class="affiliate-link">🔗 Official Site</a>`
                 : '';
             
             return `
@@ -325,7 +325,7 @@
             const metadataEl = document.getElementById('metadata');
             if (metadata && metadata.updated_at) {
                 const updateDate = new Date(metadata.updated_at);
-                const formatted = updateDate.toLocaleString('ja-JP', {
+                const formatted = updateDate.toLocaleString('en-US', {
                     year: 'numeric',
                     month: 'long',
                     day: 'numeric',
@@ -336,9 +336,9 @@
                 const totalCount = Object.values(categoriesData).flat().length;
                 
                 metadataEl.innerHTML = `
-                    📅 最終更新: ${formatted} | 
-                    📊 データソース: <a href="${metadata.api_url}" target="_blank">GitHub API</a> |
-                    ${totalCount}件のリポジトリ
+                    📅 Last Updated: ${formatted} | 
+                    📊 Data Source: <a href="${metadata.api_url}" target="_blank">GitHub API</a> |
+                    ${totalCount} repositories
                 `;
             }
         }
@@ -353,7 +353,7 @@
             
             let html = `
                 <button class="tab-btn active" data-category="all">
-                    📚 全カテゴリー <span class="category-count">(${allCount})</span>
+                    📚 All Categories <span class="category-count">(${allCount})</span>
                 </button>
             `;
             
@@ -441,7 +441,7 @@
         async function loadData() {
             try {
                 const response = await fetch('assets/categories.json');
-                if (!response.ok) throw new Error('データの読み込みに失敗しました');
+                if (!response.ok) throw new Error('Failed to load data');
                 
                 const jsonData = await response.json();
                 
@@ -460,7 +460,7 @@
                 renderContent();
                 
             } catch (error) {
-                document.getElementById('tabs').innerHTML = `<div class="error">エラー: ${error.message}</div>`;
+                document.getElementById('tabs').innerHTML = `<div class="error">Error: ${error.message}</div>`;
                 document.getElementById('tab-contents').innerHTML = '';
             }
         }

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-GitHub APIを使用してリポジトリ情報を取得し、JSONファイルを更新するスクリプト
+This is a script to update repository data using the GitHub API.
 """
 
 import json
@@ -10,29 +10,28 @@ from datetime import datetime, timedelta
 import requests
 from typing import List, Dict, Optional
 
-# GitHub API設定
 GITHUB_API_URL = "https://api.github.com"
 
-# 出力ファイルパス
+# Output file paths
 ASSETS_DIR = "assets"
 POPULAR_FILE = f"{ASSETS_DIR}/popular.json"
 NEW_FILE = f"{ASSETS_DIR}/new.json"
 CATEGORIES_FILE = f"{ASSETS_DIR}/categories.json"
 
-# カテゴリー別の検索キーワード（LLM/AI/ML/NLPに焦点を当てる）
+# Search keywords by category (focusing on LLM/AI/ML/NLP)
 CATEGORIES = {
-    "LLM & 生成AI": ["llm", "large language model", "gpt", "chatbot", "generative-ai"],
-    "機械学習": ["machine learning", "deep learning", "tensorflow", "pytorch"],
-    "自然言語処理": ["nlp", "natural language processing", "transformers", "bert"],
-    "AIツール": ["ai tools", "copilot", "ai assistant", "ai agent"],
-    "データサイエンス": ["data science", "jupyter", "pandas", "data analysis"],
-    "コンピュータビジョン": ["computer vision", "opencv", "image recognition", "yolo"],
+    "LLM and Generative AI": ["llm", "large language model", "gpt", "chatbot", "generative-ai"],
+    "Machine Learning": ["machine learning", "deep learning", "tensorflow", "pytorch"],
+    "Natural Language Processing": ["nlp", "natural language processing", "transformers", "bert"],
+    "AI Tools": ["ai tools", "copilot", "ai assistant", "ai agent"],
+    "Data Science": ["data science", "jupyter", "pandas", "data analysis"],
+    "Computer Vision": ["computer vision", "opencv", "image recognition", "yolo"],
     "MLOps": ["mlops", "ml infrastructure", "model deployment", "mlflow"],
 }
 
 
 def get_headers() -> Dict[str, str]:
-    """GitHub API用のヘッダーを取得"""
+    """Get headers for GitHub API requests"""
     headers = {
         "Accept": "application/vnd.github.v3+json",
     }
@@ -40,7 +39,7 @@ def get_headers() -> Dict[str, str]:
 
 
 def check_rate_limit() -> Dict:
-    """GitHub APIのレート制限を確認"""
+    """Check GitHub API rate limit"""
     url = f"{GITHUB_API_URL}/rate_limit"
     try:
         response = requests.get(url, headers=get_headers())
@@ -56,7 +55,7 @@ def check_rate_limit() -> Dict:
 
 
 def search_repositories(query: str, sort: str = "stars", per_page: int = 30) -> List[Dict]:
-    """GitHubでリポジトリを検索"""
+    """Search GitHub repositories based on a query"""
     url = f"{GITHUB_API_URL}/search/repositories"
     params = {
         "q": query,
@@ -68,7 +67,7 @@ def search_repositories(query: str, sort: str = "stars", per_page: int = 30) -> 
     try:
         response = requests.get(url, headers=get_headers(), params=params)
         
-        # レート制限のチェック
+        # Check rate limit
         remaining = response.headers.get('X-RateLimit-Remaining')
         if remaining:
             print(f"  API calls remaining: {remaining}")
@@ -76,11 +75,10 @@ def search_repositories(query: str, sort: str = "stars", per_page: int = 30) -> 
         response.raise_for_status()
         data = response.json()
         
-        # API制限に近づいたら警告
         if remaining and int(remaining) < 10:
             print(f"⚠️ WARNING: Only {remaining} API calls remaining!")
-        
-        # レート制限を超えないよう少し待機
+
+        # Wait a bit to avoid hitting rate limits
         time.sleep(0.5)
         
         return data.get("items", [])
@@ -97,7 +95,7 @@ def search_repositories(query: str, sort: str = "stars", per_page: int = 30) -> 
 
 
 def format_repo_data(repo: Dict, affiliate_link: Optional[str] = None) -> Dict:
-    """リポジトリデータを必要な情報のみに整形"""
+    """Format repository data to include only necessary information"""
     data = {
         "name": repo.get("full_name", ""),
         "html_url": repo.get("html_url", ""),
@@ -110,7 +108,6 @@ def format_repo_data(repo: Dict, affiliate_link: Optional[str] = None) -> Dict:
         "topics": repo.get("topics", []),
     }
     
-    # アフィリエイトリンクがある場合は追加
     if affiliate_link:
         data["affiliate_link"] = affiliate_link
     
@@ -118,7 +115,6 @@ def format_repo_data(repo: Dict, affiliate_link: Optional[str] = None) -> Dict:
 
 
 def get_popular_repos() -> List[Dict]:
-    """人気のリポジトリを取得（スター数順、LLM/AI/ML/NLPにフォーカス）"""
     print("Fetching popular repositories (LLM/AI/ML/NLP focus)...")
     # LLM、AI、ML、NLPに関連するトピックでフィルタ（OR演算子なしで複数トピック）
     query = "stars:>5000 topic:machine-learning"
@@ -127,17 +123,17 @@ def get_popular_repos() -> List[Dict]:
 
 
 def get_trending_repos() -> List[Dict]:
-    """トレンドリポジトリを取得（最近1週間でスターが増えた順）"""
+    """Get trending repositories (sorted by stars gained in the last week)"""
     print("Fetching trending repositories (last 7 days)...")
     date_7_days_ago = (datetime.now() - timedelta(days=7)).strftime("%Y-%m-%d")
-    # 過去1週間で更新され、一定以上のスターを持つリポジトリ
+    # Repositories updated in the last week with a certain number of stars
     query = f"pushed:>{date_7_days_ago} stars:>1000 topic:ai"
     repos = search_repositories(query, sort="stars", per_page=50)
     return [format_repo_data(repo) for repo in repos]
 
 
 def get_new_repos() -> List[Dict]:
-    """新着リポジトリを取得（作成日順、過去30日間、AI/ML関連）"""
+    """Get new repositories (sorted by creation date, last 30 days, AI/ML focus)"""
     print("Fetching new repositories (last 30 days, AI/ML focus)...")
     date_30_days_ago = (datetime.now() - timedelta(days=30)).strftime("%Y-%m-%d")
     query = f"created:>{date_30_days_ago} stars:>50"
@@ -146,13 +142,13 @@ def get_new_repos() -> List[Dict]:
 
 
 def get_category_repos() -> Dict[str, List[Dict]]:
-    """カテゴリー別にリポジトリを取得"""
+    """Get repositories by category"""
     print("Fetching repositories by category...")
     category_repos = {}
     
     for category, keywords in CATEGORIES.items():
         print(f"  - {category}")
-        # カテゴリーの最初のキーワードで検索
+        # Search using the first keyword of the category
         query = f"{keywords[0]} stars:>1000"
         repos = search_repositories(query, sort="stars", per_page=20)
         category_repos[category] = [format_repo_data(repo) for repo in repos]
@@ -161,10 +157,10 @@ def get_category_repos() -> Dict[str, List[Dict]]:
 
 
 def save_json(data: any, filepath: str, metadata: Optional[Dict] = None):
-    """データをJSONファイルとして保存（メタデータ付き）"""
+    """Save data as a JSON file (with metadata)"""
     os.makedirs(os.path.dirname(filepath), exist_ok=True)
-    
-    # メタデータを含むJSON構造を作成
+
+    # Create JSON structure with metadata
     output = {
         "metadata": metadata or {
             "updated_at": datetime.now().isoformat(),
@@ -180,21 +176,19 @@ def save_json(data: any, filepath: str, metadata: Optional[Dict] = None):
 
 
 def main():
-    """メイン処理"""
     print("=" * 60)
     print("Starting repository data update...")
     print(f"Timestamp: {datetime.now().isoformat()}")
     print("=" * 60)
-    
-    # レート制限を確認
+
     print("\nChecking API rate limit...")
     check_rate_limit()
     
     try:
-        # メタデータの作成
+        # Create metadata
         update_time = datetime.now().isoformat()
-        
-        # 人気順のリポジトリを取得・保存
+
+        # Fetch and save popular repositories
         print("\n" + "-" * 60)
         popular_repos = get_popular_repos()
         save_json(popular_repos, POPULAR_FILE, {
@@ -205,7 +199,7 @@ def main():
             "count": len(popular_repos),
         })
         
-        # トレンドリポジトリを取得・保存（新規追加）
+        # Fetch and save trending repositories (newly added)
         print("\n" + "-" * 60)
         trending_repos = get_trending_repos()
         save_json(trending_repos, f"{ASSETS_DIR}/trending.json", {
@@ -215,8 +209,8 @@ def main():
             "description": "Trending repositories in the last 7 days",
             "count": len(trending_repos),
         })
-        
-        # 新着リポジトリを取得・保存
+
+        # Fetch and save new repositories
         print("\n" + "-" * 60)
         new_repos = get_new_repos()
         save_json(new_repos, NEW_FILE, {
@@ -227,7 +221,7 @@ def main():
             "count": len(new_repos),
         })
         
-        # カテゴリー別リポジトリを取得・保存
+        # Fetch and save repositories by category
         print("\n" + "-" * 60)
         category_repos = get_category_repos()
         save_json(category_repos, CATEGORIES_FILE, {
