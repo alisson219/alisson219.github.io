@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "updated_at": "2026-01-10T01:40:47.991587",
+    "updated_at": "2026-01-11T01:51:54.582065",
     "source": "GitHub API",
     "api_url": "https://api.github.com/search/repositories",
     "description": "Recently created repositories (last 30 days)",
@@ -11,10 +11,10 @@
       "name": "pranshuparmar/witr",
       "html_url": "https://github.com/pranshuparmar/witr",
       "description": "Why is this running?",
-      "stargazers_count": 10644,
-      "forks_count": 236,
+      "stargazers_count": 10702,
+      "forks_count": 239,
       "language": "Go",
-      "updated_at": "2026-01-10T01:01:30Z",
+      "updated_at": "2026-01-11T01:33:51Z",
       "created_at": "2025-12-20T17:26:59Z",
       "topics": []
     },
@@ -22,10 +22,10 @@
       "name": "HKUDS/DeepTutor",
       "html_url": "https://github.com/HKUDS/DeepTutor",
       "description": "\"DeepTutor: AI-Powered Personalized Learning Assistant\"",
-      "stargazers_count": 7394,
-      "forks_count": 889,
+      "stargazers_count": 7586,
+      "forks_count": 928,
       "language": "Python",
-      "updated_at": "2026-01-10T01:39:01Z",
+      "updated_at": "2026-01-11T01:41:01Z",
       "created_at": "2025-12-28T15:35:54Z",
       "topics": [
         "ai-agents",
@@ -40,24 +40,13 @@
       ]
     },
     {
-      "name": "apple/ml-sharp",
-      "html_url": "https://github.com/apple/ml-sharp",
-      "description": "Sharp Monocular View Synthesis in Less Than a Second",
-      "stargazers_count": 6684,
-      "forks_count": 441,
-      "language": "Python",
-      "updated_at": "2026-01-10T00:59:02Z",
-      "created_at": "2025-12-12T03:46:09Z",
-      "topics": []
-    },
-    {
       "name": "2025Emma/vibe-coding-cn",
       "html_url": "https://github.com/2025Emma/vibe-coding-cn",
       "description": null,
-      "stargazers_count": 6631,
-      "forks_count": 774,
+      "stargazers_count": 7341,
+      "forks_count": 839,
       "language": "Python",
-      "updated_at": "2026-01-10T01:15:23Z",
+      "updated_at": "2026-01-11T01:50:51Z",
       "created_at": "2025-12-17T00:10:23Z",
       "topics": []
     },
@@ -65,10 +54,10 @@
       "name": "OthmanAdi/planning-with-files",
       "html_url": "https://github.com/OthmanAdi/planning-with-files",
       "description": "Claude Code skill implementing Manus-style persistent markdown planning — the workflow pattern behind the $2B acquisition.",
-      "stargazers_count": 6542,
-      "forks_count": 543,
+      "stargazers_count": 6778,
+      "forks_count": 574,
       "language": "Shell",
-      "updated_at": "2026-01-10T01:38:55Z",
+      "updated_at": "2026-01-11T01:50:55Z",
       "created_at": "2026-01-03T07:37:28Z",
       "topics": []
     },
@@ -76,10 +65,10 @@
       "name": "muratcankoylan/Agent-Skills-for-Context-Engineering",
       "html_url": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering",
       "description": "A comprehensive collection of Agent Skills for context engineering, multi-agent architectures, and production agent systems. Use when building, optimizing, or debugging agent systems that require effective context management.",
-      "stargazers_count": 6243,
-      "forks_count": 501,
+      "stargazers_count": 6323,
+      "forks_count": 511,
       "language": "Python",
-      "updated_at": "2026-01-10T01:25:49Z",
+      "updated_at": "2026-01-11T01:45:42Z",
       "created_at": "2025-12-21T02:43:42Z",
       "topics": []
     },
@@ -87,10 +76,10 @@
       "name": "bellard/mquickjs",
       "html_url": "https://github.com/bellard/mquickjs",
       "description": "Public repository of the Micro QuickJS Javascript Engine",
-      "stargazers_count": 5168,
+      "stargazers_count": 5195,
       "forks_count": 181,
       "language": "C",
-      "updated_at": "2026-01-09T22:29:12Z",
+      "updated_at": "2026-01-11T01:39:07Z",
       "created_at": "2025-12-22T14:20:32Z",
       "topics": []
     },
@@ -98,54 +87,65 @@
       "name": "agentskills/agentskills",
       "html_url": "https://github.com/agentskills/agentskills",
       "description": "Specification and documentation for Agent Skills",
-      "stargazers_count": 4963,
-      "forks_count": 252,
+      "stargazers_count": 5043,
+      "forks_count": 258,
       "language": "Python",
-      "updated_at": "2026-01-10T00:54:51Z",
+      "updated_at": "2026-01-11T01:50:03Z",
       "created_at": "2025-12-16T15:47:19Z",
-      "topics": []
-    },
-    {
-      "name": "AnmolSaini16/mapcn",
-      "html_url": "https://github.com/AnmolSaini16/mapcn",
-      "description": "Beautiful map components. 100% Free, Zero config, one command setup.",
-      "stargazers_count": 4090,
-      "forks_count": 201,
-      "language": "TypeScript",
-      "updated_at": "2026-01-10T01:07:44Z",
-      "created_at": "2025-12-28T10:57:22Z",
       "topics": []
     },
     {
       "name": "kepano/obsidian-skills",
       "html_url": "https://github.com/kepano/obsidian-skills",
       "description": "Claude Skills for Obsidian",
-      "stargazers_count": 3771,
-      "forks_count": 160,
+      "stargazers_count": 4794,
+      "forks_count": 198,
       "language": null,
-      "updated_at": "2026-01-10T01:39:28Z",
+      "updated_at": "2026-01-11T01:51:54Z",
       "created_at": "2026-01-02T21:45:11Z",
+      "topics": []
+    },
+    {
+      "name": "AnmolSaini16/mapcn",
+      "html_url": "https://github.com/AnmolSaini16/mapcn",
+      "description": "Beautiful map components. 100% Free, Zero config, one command setup.",
+      "stargazers_count": 4146,
+      "forks_count": 205,
+      "language": "TypeScript",
+      "updated_at": "2026-01-11T01:28:42Z",
+      "created_at": "2025-12-28T10:57:22Z",
       "topics": []
     },
     {
       "name": "ChrisWiles/claude-code-showcase",
       "html_url": "https://github.com/ChrisWiles/claude-code-showcase",
       "description": "Comprehensive Claude Code project configuration example with hooks, skills, agents, commands, and GitHub Actions workflows",
-      "stargazers_count": 3229,
-      "forks_count": 296,
+      "stargazers_count": 3777,
+      "forks_count": 342,
       "language": "JavaScript",
-      "updated_at": "2026-01-10T01:39:15Z",
+      "updated_at": "2026-01-11T01:46:28Z",
       "created_at": "2026-01-06T18:51:02Z",
+      "topics": []
+    },
+    {
+      "name": "steveyegge/gastown",
+      "html_url": "https://github.com/steveyegge/gastown",
+      "description": "Gas Town - multi-agent workspace manager",
+      "stargazers_count": 3101,
+      "forks_count": 246,
+      "language": "Go",
+      "updated_at": "2026-01-11T01:51:18Z",
+      "created_at": "2025-12-16T00:33:33Z",
       "topics": []
     },
     {
       "name": "productdevbook/port-killer",
       "html_url": "https://github.com/productdevbook/port-killer",
       "description": "A powerful cross-platform port management tool for developers. Monitor ports, manage Kubernetes port forwards, integrate Cloudflare Tunnels, and kill processes with one click.",
-      "stargazers_count": 3053,
+      "stargazers_count": 3065,
       "forks_count": 104,
       "language": "Swift",
-      "updated_at": "2026-01-10T01:24:13Z",
+      "updated_at": "2026-01-11T00:01:19Z",
       "created_at": "2025-12-16T01:44:50Z",
       "topics": [
         "developer-tools",
@@ -161,24 +161,13 @@
       ]
     },
     {
-      "name": "steveyegge/gastown",
-      "html_url": "https://github.com/steveyegge/gastown",
-      "description": "Gas Town - multi-agent workspace manager",
-      "stargazers_count": 2955,
-      "forks_count": 222,
-      "language": "Go",
-      "updated_at": "2026-01-10T01:09:30Z",
-      "created_at": "2025-12-16T00:33:33Z",
-      "topics": []
-    },
-    {
       "name": "Maxteabag/sqlit",
       "html_url": "https://github.com/Maxteabag/sqlit",
       "description": "A user friendly TUI for SQL databases. Written in python. Supports SQL server, Mysql, PostreSQL, SQLite, Turso and more.",
-      "stargazers_count": 2710,
+      "stargazers_count": 2721,
       "forks_count": 64,
       "language": "Python",
-      "updated_at": "2026-01-10T01:25:04Z",
+      "updated_at": "2026-01-11T01:35:20Z",
       "created_at": "2025-12-13T00:10:36Z",
       "topics": [
         "cockroachdb",
@@ -197,24 +186,13 @@
       ]
     },
     {
-      "name": "VibiumDev/vibium",
-      "html_url": "https://github.com/VibiumDev/vibium",
-      "description": "Browser automation for AI agents and humans",
-      "stargazers_count": 2259,
-      "forks_count": 114,
-      "language": "Go",
-      "updated_at": "2026-01-09T22:00:45Z",
-      "created_at": "2025-12-12T00:56:53Z",
-      "topics": []
-    },
-    {
       "name": "nguyenphutrong/quotio",
       "html_url": "https://github.com/nguyenphutrong/quotio",
       "description": "Stop juggling AI accounts. Quotio is a beautiful native macOS menu bar app that unifies your Claude, Gemini, OpenAI, Qwen, and Antigravity subscriptions – with real-time quota tracking and smart auto-failover for AI coding tools like Claude Code, OpenCode, and Droid.",
-      "stargazers_count": 2191,
-      "forks_count": 129,
+      "stargazers_count": 2212,
+      "forks_count": 131,
       "language": "Swift",
-      "updated_at": "2026-01-10T01:33:30Z",
+      "updated_at": "2026-01-11T01:45:08Z",
       "created_at": "2025-12-24T14:42:00Z",
       "topics": [
         "ai-tools",
@@ -224,43 +202,13 @@
       ]
     },
     {
-      "name": "journey-ad/gemini-watermark-remover",
-      "html_url": "https://github.com/journey-ad/gemini-watermark-remover",
-      "description": "A high-performance, 100% client-side tool for removing Gemini AI watermarks. Built with pure JavaScript, it leverages a mathematically precise Reverse Alpha Blending algorithm rather than unpredictable AI inpainting. / 基于 Javascript 的纯浏览器端 Gemini AI 图像无损去水印工具，使用数学精确的反向 Alpha 混合算法",
-      "stargazers_count": 1947,
-      "forks_count": 217,
-      "language": "JavaScript",
-      "updated_at": "2026-01-10T00:48:56Z",
-      "created_at": "2025-12-19T12:06:10Z",
-      "topics": []
-    },
-    {
-      "name": "jarrodwatts/claude-hud",
-      "html_url": "https://github.com/jarrodwatts/claude-hud",
-      "description": "A Claude Code plugin that shows what's happening - context usage, active tools, running agents, and todo progress",
-      "stargazers_count": 1855,
-      "forks_count": 90,
-      "language": "JavaScript",
-      "updated_at": "2026-01-10T01:38:13Z",
-      "created_at": "2026-01-02T01:35:07Z",
-      "topics": [
-        "anthropic",
-        "claude",
-        "claude-code",
-        "cli",
-        "plugin",
-        "statusline",
-        "typescript"
-      ]
-    },
-    {
-      "name": "parcadei/Continuous-Claude-v2",
-      "html_url": "https://github.com/parcadei/Continuous-Claude-v2",
+      "name": "parcadei/Continuous-Claude-v3",
+      "html_url": "https://github.com/parcadei/Continuous-Claude-v3",
       "description": "Context management for Claude Code. Hooks maintain state via ledgers and handoffs. MCP execution without context pollution. Agent orchestration with isolated context windows.",
-      "stargazers_count": 1792,
-      "forks_count": 100,
+      "stargazers_count": 2140,
+      "forks_count": 152,
       "language": "Python",
-      "updated_at": "2026-01-10T01:35:35Z",
+      "updated_at": "2026-01-11T01:50:40Z",
       "created_at": "2025-12-23T00:12:49Z",
       "topics": [
         "agents",
@@ -275,13 +223,24 @@
       ]
     },
     {
+      "name": "journey-ad/gemini-watermark-remover",
+      "html_url": "https://github.com/journey-ad/gemini-watermark-remover",
+      "description": "A high-performance, 100% client-side tool for removing Gemini AI watermarks. Built with pure JavaScript, it leverages a mathematically precise Reverse Alpha Blending algorithm rather than unpredictable AI inpainting. / 基于 Javascript 的纯浏览器端 Gemini AI 图像无损去水印工具，使用数学精确的反向 Alpha 混合算法",
+      "stargazers_count": 1965,
+      "forks_count": 221,
+      "language": "JavaScript",
+      "updated_at": "2026-01-11T01:13:35Z",
+      "created_at": "2025-12-19T12:06:10Z",
+      "topics": []
+    },
+    {
       "name": "Lightricks/LTX-2",
       "html_url": "https://github.com/Lightricks/LTX-2",
       "description": "Official Python inference and LoRA trainer package for the LTX-2 audio–video generative model.",
-      "stargazers_count": 1733,
-      "forks_count": 177,
+      "stargazers_count": 1908,
+      "forks_count": 203,
       "language": "Python",
-      "updated_at": "2026-01-10T01:33:41Z",
+      "updated_at": "2026-01-11T01:48:36Z",
       "created_at": "2026-01-03T13:16:29Z",
       "topics": [
         "generative-ai",
@@ -290,35 +249,65 @@
       ]
     },
     {
-      "name": "Tencent-Hunyuan/HY-Motion-1.0",
-      "html_url": "https://github.com/Tencent-Hunyuan/HY-Motion-1.0",
-      "description": "HY-Motion model for 3D character animation generation. ",
-      "stargazers_count": 1675,
-      "forks_count": 115,
-      "language": "Python",
-      "updated_at": "2026-01-10T00:35:56Z",
-      "created_at": "2025-12-29T11:09:18Z",
+      "name": "jarrodwatts/claude-hud",
+      "html_url": "https://github.com/jarrodwatts/claude-hud",
+      "description": "A Claude Code plugin that shows what's happening - context usage, active tools, running agents, and todo progress",
+      "stargazers_count": 1905,
+      "forks_count": 91,
+      "language": "JavaScript",
+      "updated_at": "2026-01-11T01:29:43Z",
+      "created_at": "2026-01-02T01:35:07Z",
+      "topics": [
+        "anthropic",
+        "claude",
+        "claude-code",
+        "cli",
+        "plugin",
+        "statusline",
+        "typescript"
+      ]
+    },
+    {
+      "name": "snarktank/ralph",
+      "html_url": "https://github.com/snarktank/ralph",
+      "description": "Ralph is an autonomous AI agent loop that runs repeatedly until all PRD items are complete. ",
+      "stargazers_count": 1801,
+      "forks_count": 276,
+      "language": "TypeScript",
+      "updated_at": "2026-01-11T01:51:42Z",
+      "created_at": "2026-01-07T14:45:10Z",
       "topics": []
     },
     {
       "name": "huseyinbabal/taws",
       "html_url": "https://github.com/huseyinbabal/taws",
       "description": "Terminal UI for AWS (taws) - A terminal-based AWS resource viewer and manager",
-      "stargazers_count": 1663,
-      "forks_count": 46,
+      "stargazers_count": 1702,
+      "forks_count": 47,
       "language": "Rust",
-      "updated_at": "2026-01-10T01:38:00Z",
+      "updated_at": "2026-01-11T00:12:15Z",
       "created_at": "2026-01-04T09:50:22Z",
+      "topics": []
+    },
+    {
+      "name": "Tencent-Hunyuan/HY-Motion-1.0",
+      "html_url": "https://github.com/Tencent-Hunyuan/HY-Motion-1.0",
+      "description": "HY-Motion model for 3D character animation generation. ",
+      "stargazers_count": 1698,
+      "forks_count": 118,
+      "language": "Python",
+      "updated_at": "2026-01-11T01:08:27Z",
+      "created_at": "2025-12-29T11:09:18Z",
       "topics": []
     },
     {
       "name": "MineDojo/NitroGen",
       "html_url": "https://github.com/MineDojo/NitroGen",
       "description": "A Foundation Model for Generalist Gaming Agents",
-      "stargazers_count": 1557,
-      "forks_count": 182,
+      "stargazers_count": 1571,
+      "forks_count": 184,
       "language": "Python",
-      "updated_at": "2026-01-10T00:59:48Z",
+      "updated_at": "2026-01-10T17:16:43Z",
       "created_at": "2025-12-17T17:03:47Z",
       "topics": []
     },
@@ -326,37 +315,32 @@
       "name": "buyukakyuz/corroded",
       "html_url": "https://github.com/buyukakyuz/corroded",
       "description": "Illegal rust",
-      "stargazers_count": 1490,
-      "forks_count": 44,
+      "stargazers_count": 1499,
+      "forks_count": 45,
       "language": "Rust",
-      "updated_at": "2026-01-09T21:17:58Z",
+      "updated_at": "2026-01-11T01:03:24Z",
       "created_at": "2025-12-29T22:24:33Z",
       "topics": []
     },
     {
-      "name": "antonmedv/textarea",
-      "html_url": "https://github.com/antonmedv/textarea",
-      "description": "A minimalist text editor that lives in URL",
-      "stargazers_count": 1442,
-      "forks_count": 106,
-      "language": "HTML",
-      "updated_at": "2026-01-09T20:14:36Z",
-      "created_at": "2025-12-22T22:29:15Z",
-      "topics": [
-        "markdown",
-        "minimalistic",
-        "notes",
-        "text-editor"
-      ]
+      "name": "ZeframLou/call-me",
+      "html_url": "https://github.com/ZeframLou/call-me",
+      "description": "Minimal plugin that lets Claude Code call you on the phone.",
+      "stargazers_count": 1492,
+      "forks_count": 146,
+      "language": "TypeScript",
+      "updated_at": "2026-01-11T01:51:30Z",
+      "created_at": "2026-01-03T04:35:48Z",
+      "topics": []
     },
     {
       "name": "gemini-cli-extensions/conductor",
       "html_url": "https://github.com/gemini-cli-extensions/conductor",
       "description": "Conductor is a Gemini CLI extension that allows you to specify, plan, and implement software features.",
-      "stargazers_count": 1433,
-      "forks_count": 123,
+      "stargazers_count": 1463,
+      "forks_count": 125,
       "language": null,
-      "updated_at": "2026-01-10T01:16:56Z",
+      "updated_at": "2026-01-11T01:31:55Z",
       "created_at": "2025-12-17T03:25:48Z",
       "topics": [
         "context-driven-development",
@@ -367,13 +351,29 @@
       ]
     },
     {
+      "name": "antonmedv/textarea",
+      "html_url": "https://github.com/antonmedv/textarea",
+      "description": "A minimalist text editor that lives in URL",
+      "stargazers_count": 1450,
+      "forks_count": 108,
+      "language": "HTML",
+      "updated_at": "2026-01-10T22:59:47Z",
+      "created_at": "2025-12-22T22:29:15Z",
+      "topics": [
+        "markdown",
+        "minimalistic",
+        "notes",
+        "text-editor"
+      ]
+    },
+    {
       "name": "Tongyi-MAI/MAI-UI",
       "html_url": "https://github.com/Tongyi-MAI/MAI-UI",
       "description": "MAI-UI: Real-World Centric Foundation GUI Agents ranging from 2B to 235B",
-      "stargazers_count": 1384,
-      "forks_count": 144,
+      "stargazers_count": 1396,
+      "forks_count": 148,
       "language": "Jupyter Notebook",
-      "updated_at": "2026-01-09T16:04:56Z",
+      "updated_at": "2026-01-10T16:58:08Z",
       "created_at": "2025-12-15T07:53:22Z",
       "topics": [
         "device-cloud-collaboration",
@@ -387,10 +387,10 @@
       "name": "QwenLM/Qwen-Image-Layered",
       "html_url": "https://github.com/QwenLM/Qwen-Image-Layered",
       "description": "Qwen-Image-Layered: Layered Decomposition for Inherent Editablity",
-      "stargazers_count": 1379,
-      "forks_count": 108,
+      "stargazers_count": 1389,
+      "forks_count": 109,
       "language": "Python",
-      "updated_at": "2026-01-09T15:24:05Z",
+      "updated_at": "2026-01-11T01:01:22Z",
       "created_at": "2025-12-18T08:54:50Z",
       "topics": []
     },
@@ -399,122 +399,20 @@
       "html_url": "https://github.com/eooce/Gla-deploy",
       "description": null,
       "stargazers_count": 1366,
-      "forks_count": 251,
+      "forks_count": 254,
       "language": "JavaScript",
-      "updated_at": "2026-01-09T08:36:49Z",
+      "updated_at": "2026-01-10T15:09:06Z",
       "created_at": "2025-12-13T11:36:04Z",
-      "topics": []
-    },
-    {
-      "name": "DGoettlich/history-llms",
-      "html_url": "https://github.com/DGoettlich/history-llms",
-      "description": "Information hub for our project training the largest possible historical LLMs.",
-      "stargazers_count": 1334,
-      "forks_count": 22,
-      "language": null,
-      "updated_at": "2026-01-09T13:18:03Z",
-      "created_at": "2025-12-14T13:48:15Z",
-      "topics": []
-    },
-    {
-      "name": "Lulzx/tinypdf",
-      "html_url": "https://github.com/Lulzx/tinypdf",
-      "description": "Minimal PDF creation library. <400 LOC, zero dependencies, makes real PDFs.",
-      "stargazers_count": 1301,
-      "forks_count": 58,
-      "language": "TypeScript",
-      "updated_at": "2026-01-09T20:22:54Z",
-      "created_at": "2025-12-18T18:47:20Z",
-      "topics": [
-        "invoice-generator",
-        "pdf",
-        "pdf-generation"
-      ]
-    },
-    {
-      "name": "GuDaStudio/skills",
-      "html_url": "https://github.com/GuDaStudio/skills",
-      "description": "This repository contains a collection of Agent Skills developed by GudaStudio, enabling seamless collaboration between Claude and other AI models and tools.",
-      "stargazers_count": 1291,
-      "forks_count": 70,
-      "language": "PowerShell",
-      "updated_at": "2026-01-10T01:18:21Z",
-      "created_at": "2025-12-16T14:54:52Z",
-      "topics": []
-    },
-    {
-      "name": "numman-ali/cc-mirror",
-      "html_url": "https://github.com/numman-ali/cc-mirror",
-      "description": "Create multiple isolated Claude Code variants with custom providers (Z.ai, MiniMax, OpenRouter, LiteLLM)",
-      "stargazers_count": 1282,
-      "forks_count": 104,
-      "language": "TypeScript",
-      "updated_at": "2026-01-10T01:15:40Z",
-      "created_at": "2026-01-02T22:28:50Z",
-      "topics": []
-    },
-    {
-      "name": "badrisnarayanan/antigravity-claude-proxy",
-      "html_url": "https://github.com/badrisnarayanan/antigravity-claude-proxy",
-      "description": "Proxy that exposes Antigravity provided claude / gemini models, so we can use them in Claude Code",
-      "stargazers_count": 1259,
-      "forks_count": 158,
-      "language": "JavaScript",
-      "updated_at": "2026-01-10T00:07:23Z",
-      "created_at": "2025-12-19T13:57:33Z",
-      "topics": [
-        "antigravity",
-        "claude",
-        "claude-code",
-        "gemini",
-        "gemini-cli"
-      ]
-    },
-    {
-      "name": "datawhalechina/easy-vibe",
-      "html_url": "https://github.com/datawhalechina/easy-vibe",
-      "description": "从 0 到 1 学会 vibe coding，项目制学习",
-      "stargazers_count": 1253,
-      "forks_count": 104,
-      "language": null,
-      "updated_at": "2026-01-10T01:30:58Z",
-      "created_at": "2025-12-28T16:45:28Z",
-      "topics": [
-        "ai",
-        "course",
-        "vibe-coding"
-      ]
-    },
-    {
-      "name": "ZeframLou/call-me",
-      "html_url": "https://github.com/ZeframLou/call-me",
-      "description": "Minimal plugin that lets Claude Code call you on the phone.",
-      "stargazers_count": 1222,
-      "forks_count": 124,
-      "language": "TypeScript",
-      "updated_at": "2026-01-10T01:22:44Z",
-      "created_at": "2026-01-03T04:35:48Z",
-      "topics": []
-    },
-    {
-      "name": "mmarinovic/tailwindsql",
-      "html_url": "https://github.com/mmarinovic/tailwindsql",
-      "description": "TailwindSQL lets you write SQL queries using Tailwind-style class names.",
-      "stargazers_count": 1218,
-      "forks_count": 53,
-      "language": "TypeScript",
-      "updated_at": "2026-01-10T00:49:11Z",
-      "created_at": "2025-12-15T13:40:25Z",
       "topics": []
     },
     {
       "name": "ophub/fnnas",
       "html_url": "https://github.com/ophub/fnnas",
       "description": "Supports running FnNAS on Amlogic, Allwinner, and Rockchip devices. Support a311d, s922x, s905x3, s905x2, s912, s905d, s905x, s905w, s905, s905l, rk3588, rk3568, rk3399, rk3328, h6, etc.",
-      "stargazers_count": 1191,
-      "forks_count": 203,
+      "stargazers_count": 1360,
+      "forks_count": 236,
       "language": "Shell",
-      "updated_at": "2026-01-10T01:37:09Z",
+      "updated_at": "2026-01-11T01:50:04Z",
       "created_at": "2026-01-06T13:44:30Z",
       "topics": [
         "a311d",
@@ -536,6 +434,134 @@
         "s912",
         "s922x"
       ]
+    },
+    {
+      "name": "glittercowboy/get-shit-done",
+      "html_url": "https://github.com/glittercowboy/get-shit-done",
+      "description": "A light-weight and powerful meta-prompting, context engineering and spec-driven development system for Claude Code by TÂCHES.",
+      "stargazers_count": 1350,
+      "forks_count": 177,
+      "language": "JavaScript",
+      "updated_at": "2026-01-11T01:50:58Z",
+      "created_at": "2025-12-14T14:17:12Z",
+      "topics": [
+        "claude-code",
+        "context-engineering",
+        "meta-prompting",
+        "spec-driven-development"
+      ]
+    },
+    {
+      "name": "datawhalechina/easy-vibe",
+      "html_url": "https://github.com/datawhalechina/easy-vibe",
+      "description": "从 0 到 1 学会 vibe coding，项目制学习",
+      "stargazers_count": 1345,
+      "forks_count": 112,
+      "language": null,
+      "updated_at": "2026-01-11T01:42:15Z",
+      "created_at": "2025-12-28T16:45:28Z",
+      "topics": [
+        "ai",
+        "course",
+        "vibe-coding"
+      ]
+    },
+    {
+      "name": "DGoettlich/history-llms",
+      "html_url": "https://github.com/DGoettlich/history-llms",
+      "description": "Information hub for our project training the largest possible historical LLMs.",
+      "stargazers_count": 1340,
+      "forks_count": 22,
+      "language": null,
+      "updated_at": "2026-01-11T00:05:20Z",
+      "created_at": "2025-12-14T13:48:15Z",
+      "topics": []
+    },
+    {
+      "name": "badrisnarayanan/antigravity-claude-proxy",
+      "html_url": "https://github.com/badrisnarayanan/antigravity-claude-proxy",
+      "description": "Proxy that exposes Antigravity provided claude / gemini models, so we can use them in Claude Code",
+      "stargazers_count": 1321,
+      "forks_count": 167,
+      "language": "JavaScript",
+      "updated_at": "2026-01-11T01:49:58Z",
+      "created_at": "2025-12-19T13:57:33Z",
+      "topics": [
+        "antigravity",
+        "claude",
+        "claude-code",
+        "gemini",
+        "gemini-cli"
+      ]
+    },
+    {
+      "name": "GuDaStudio/skills",
+      "html_url": "https://github.com/GuDaStudio/skills",
+      "description": "This repository contains a collection of Agent Skills developed by GudaStudio, enabling seamless collaboration between Claude and other AI models and tools.",
+      "stargazers_count": 1306,
+      "forks_count": 71,
+      "language": "PowerShell",
+      "updated_at": "2026-01-10T19:16:09Z",
+      "created_at": "2025-12-16T14:54:52Z",
+      "topics": []
+    },
+    {
+      "name": "numman-ali/cc-mirror",
+      "html_url": "https://github.com/numman-ali/cc-mirror",
+      "description": "Create multiple isolated Claude Code variants with custom providers (Z.ai, MiniMax, OpenRouter, LiteLLM)",
+      "stargazers_count": 1304,
+      "forks_count": 106,
+      "language": "TypeScript",
+      "updated_at": "2026-01-11T00:23:33Z",
+      "created_at": "2026-01-02T22:28:50Z",
+      "topics": []
+    },
+    {
+      "name": "Lulzx/tinypdf",
+      "html_url": "https://github.com/Lulzx/tinypdf",
+      "description": "Minimal PDF creation library. <400 LOC, zero dependencies, makes real PDFs.",
+      "stargazers_count": 1302,
+      "forks_count": 58,
+      "language": "TypeScript",
+      "updated_at": "2026-01-10T20:25:48Z",
+      "created_at": "2025-12-18T18:47:20Z",
+      "topics": [
+        "invoice-generator",
+        "pdf",
+        "pdf-generation"
+      ]
+    },
+    {
+      "name": "abusoww/tuxmate",
+      "html_url": "https://github.com/abusoww/tuxmate",
+      "description": "THE MISSING BULK APP INSTALLER FOR LINUX",
+      "stargazers_count": 1219,
+      "forks_count": 51,
+      "language": "TypeScript",
+      "updated_at": "2026-01-11T01:31:07Z",
+      "created_at": "2025-12-24T03:35:39Z",
+      "topics": [
+        "arch",
+        "debian",
+        "flatpa",
+        "linux",
+        "nix",
+        "package-manager",
+        "tool",
+        "ubuntu",
+        "web"
+      ]
+    },
+    {
+      "name": "mmarinovic/tailwindsql",
+      "html_url": "https://github.com/mmarinovic/tailwindsql",
+      "description": "TailwindSQL lets you write SQL queries using Tailwind-style class names.",
+      "stargazers_count": 1219,
+      "forks_count": 54,
+      "language": "TypeScript",
+      "updated_at": "2026-01-10T14:31:42Z",
+      "created_at": "2025-12-15T13:40:25Z",
+      "topics": []
     },
     {
       "name": "aiflowy/aiflowy",
@@ -561,66 +587,24 @@
       ]
     },
     {
-      "name": "hezhizheng/go-wxpush",
-      "html_url": "https://github.com/hezhizheng/go-wxpush",
-      "description": "极简且免费的微信消息推送服务 (基于golang)",
-      "stargazers_count": 1181,
-      "forks_count": 119,
-      "language": "Go",
-      "updated_at": "2026-01-09T18:52:49Z",
-      "created_at": "2025-12-12T16:58:12Z",
-      "topics": []
-    },
-    {
-      "name": "abusoww/tuxmate",
-      "html_url": "https://github.com/abusoww/tuxmate",
-      "description": "THE MISSING BULK APP INSTALLER FOR LINUX",
-      "stargazers_count": 1169,
-      "forks_count": 48,
-      "language": "TypeScript",
-      "updated_at": "2026-01-10T01:31:03Z",
-      "created_at": "2025-12-24T03:35:39Z",
-      "topics": [
-        "linux",
-        "tool",
-        "web"
-      ]
-    },
-    {
       "name": "IQuestLab/IQuest-Coder-V1",
       "html_url": "https://github.com/IQuestLab/IQuest-Coder-V1",
       "description": null,
-      "stargazers_count": 1161,
+      "stargazers_count": 1177,
       "forks_count": 75,
       "language": "Python",
-      "updated_at": "2026-01-10T00:55:50Z",
+      "updated_at": "2026-01-10T22:39:59Z",
       "created_at": "2025-12-31T06:42:57Z",
       "topics": []
-    },
-    {
-      "name": "glittercowboy/get-shit-done",
-      "html_url": "https://github.com/glittercowboy/get-shit-done",
-      "description": "A light-weight and powerful meta-prompting, context engineering and spec-driven development system for Claude Code by TÂCHES.",
-      "stargazers_count": 1137,
-      "forks_count": 142,
-      "language": "JavaScript",
-      "updated_at": "2026-01-10T01:29:23Z",
-      "created_at": "2025-12-14T14:17:12Z",
-      "topics": [
-        "claude-code",
-        "context-engineering",
-        "meta-prompting",
-        "spec-driven-development"
-      ]
     },
     {
       "name": "heilcheng/awesome-agent-skills",
       "html_url": "https://github.com/heilcheng/awesome-agent-skills",
       "description": "A curated list of skills, tools, tutorials, and capabilities for AI coding agents (Claude, Codex, Copilot, VS Code)",
-      "stargazers_count": 1119,
-      "forks_count": 79,
+      "stargazers_count": 1142,
+      "forks_count": 81,
       "language": null,
-      "updated_at": "2026-01-10T00:16:00Z",
+      "updated_at": "2026-01-11T01:11:09Z",
       "created_at": "2025-12-29T21:13:40Z",
       "topics": [
         "agent-skills",
@@ -642,24 +626,13 @@
       ]
     },
     {
-      "name": "snarktank/ralph",
-      "html_url": "https://github.com/snarktank/ralph",
-      "description": "Ralph is an autonomous AI agent loop that runs Amp repeatedly until all PRD items are complete. ",
-      "stargazers_count": 1114,
-      "forks_count": 190,
-      "language": "TypeScript",
-      "updated_at": "2026-01-10T01:39:32Z",
-      "created_at": "2026-01-07T14:45:10Z",
-      "topics": []
-    },
-    {
       "name": "cyl19970726/poly-sdk",
       "html_url": "https://github.com/cyl19970726/poly-sdk",
       "description": null,
-      "stargazers_count": 1096,
-      "forks_count": 320,
+      "stargazers_count": 1118,
+      "forks_count": 330,
       "language": "TypeScript",
-      "updated_at": "2026-01-10T01:27:29Z",
+      "updated_at": "2026-01-10T21:08:14Z",
       "created_at": "2025-12-23T09:43:28Z",
       "topics": []
     },
@@ -667,10 +640,10 @@
       "name": "CloudAI-X/claude-workflow-v2",
       "html_url": "https://github.com/CloudAI-X/claude-workflow-v2",
       "description": "Universal Claude Code workflow plugin with agents, skills, hooks, and commands",
-      "stargazers_count": 1077,
-      "forks_count": 165,
+      "stargazers_count": 1096,
+      "forks_count": 166,
       "language": "Python",
-      "updated_at": "2026-01-09T23:54:07Z",
+      "updated_at": "2026-01-11T01:50:59Z",
       "created_at": "2026-01-01T02:20:41Z",
       "topics": []
     },
@@ -678,10 +651,10 @@
       "name": "itshover/itshover",
       "html_url": "https://github.com/itshover/itshover",
       "description": "Icons that move with intent",
-      "stargazers_count": 1047,
-      "forks_count": 58,
+      "stargazers_count": 1082,
+      "forks_count": 63,
       "language": "TypeScript",
-      "updated_at": "2026-01-10T00:41:56Z",
+      "updated_at": "2026-01-11T01:40:21Z",
       "created_at": "2025-12-29T06:34:14Z",
       "topics": [
         "animation",
@@ -696,10 +669,10 @@
       "name": "rohanprasadofficial/localflare",
       "html_url": "https://github.com/rohanprasadofficial/localflare",
       "description": "local cloudflare",
-      "stargazers_count": 1029,
-      "forks_count": 49,
+      "stargazers_count": 1067,
+      "forks_count": 52,
       "language": "TypeScript",
-      "updated_at": "2026-01-09T22:04:55Z",
+      "updated_at": "2026-01-11T01:41:37Z",
       "created_at": "2025-12-28T22:13:35Z",
       "topics": [
         "cloudflare",
@@ -712,12 +685,48 @@
       "name": "buildermethods/design-os",
       "html_url": "https://github.com/buildermethods/design-os",
       "description": "The missing design process between your product idea and your codebase.",
-      "stargazers_count": 1027,
-      "forks_count": 183,
+      "stargazers_count": 1055,
+      "forks_count": 194,
       "language": "TypeScript",
-      "updated_at": "2026-01-10T00:53:19Z",
+      "updated_at": "2026-01-11T01:17:00Z",
       "created_at": "2025-12-16T19:40:19Z",
       "topics": []
+    },
+    {
+      "name": "Dimillian/Skills",
+      "html_url": "https://github.com/Dimillian/Skills",
+      "description": "My Codex Skills",
+      "stargazers_count": 1044,
+      "forks_count": 62,
+      "language": "Shell",
+      "updated_at": "2026-01-11T01:18:13Z",
+      "created_at": "2025-12-30T14:36:32Z",
+      "topics": []
+    },
+    {
+      "name": "rberg27/doom-coding",
+      "html_url": "https://github.com/rberg27/doom-coding",
+      "description": "A guide for how to use your smartphone to code anywhere at anytime. ",
+      "stargazers_count": 1033,
+      "forks_count": 24,
+      "language": null,
+      "updated_at": "2026-01-11T01:47:50Z",
+      "created_at": "2025-12-25T11:49:09Z",
+      "topics": []
+    },
+    {
+      "name": "aiclientproxy/proxycast",
+      "html_url": "https://github.com/aiclientproxy/proxycast",
+      "description": "让 AI 编辑器之间自然流动，不仅仅可以其他工具使用，也可以转换成 api 为本地开发提供动力。",
+      "stargazers_count": 1032,
+      "forks_count": 124,
+      "language": "Rust",
+      "updated_at": "2026-01-10T22:59:27Z",
+      "created_at": "2025-12-13T17:23:15Z",
+      "topics": [
+        "claude",
+        "kiro"
+      ]
     }
   ]
 }
